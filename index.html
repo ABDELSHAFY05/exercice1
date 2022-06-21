@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Exe1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="table" style="overflow-x: auto">
+    <table id="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date de création</th>
+                <th>Etat</th>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Nom d'utilisateur</th>
+                <th>Numéro d'enregistrement</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+        
+
+    </table></div>
+    <button id="show" onclick="show()">Ajouter un nouveau utilisateur</button>
+    <div class="container" id="container" style="display:none" >
+        <div class="title">Registration</div>
+        <div class="content">
+        <form>
+            <div class="user-details">
+<div class="input-row">
+            <label for="id">ID</label>
+            <input type="text" required name="id" id="id" />
+</div>
+          
+            <div class="input-row">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" required />
+            </div>
+          
+            <div class="input-row">
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom" required />
+           
+          </div>
+          <div class="input-row">
+            <label for="etat">Etat</label>
+            <input type="text" name="etat" id="etat" required />
+            
+          </div>
+          <div class="input-row">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" name="username" id="username" required />
+            
+          </div>
+          <div class="input-row">
+            <label for="date">Date de création</label>
+            <input type="datetime-local" name="date" id="date" required />
+          </div>
+          <div class="input-row">
+            <label for="matricule">Matricule</label>
+            <input type="text" name="matricule" id="matricule" required />
+            
+          </div>
+          <button class="deleteBtn">Enregistrer</button>
+        </div>
+    </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
